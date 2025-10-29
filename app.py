@@ -38,10 +38,12 @@ def main():
         order1 = create_order(session, customer.id, "Laptop", 2500.00)
         order2 = create_order(session, customer.id, "Mouse", 50.00)
         order3 = create_order(session, customer.id, "Teclado Gamer", 50.00)
+        order4 = create_order(session, customer.id, "Celular", 3000.00)
 
         print(f"✓ Pedido 1: {order1}")
         print(f"✓ Pedido 2: {order2}")
-        print(f"✓ Pedido 3: {order3}\n")
+        print(f"✓ Pedido 3: {order3}")
+        print(f"✓ Pedido 4: {order4}")
 
         session.commit()
 
